@@ -377,6 +377,22 @@
 
         showSlide(0);
     </script>
+    </script>
+
+<script>
+    (function() {
+        const correctPassword = "Hooper10.16"; // <-- CHANGE THIS!
+        let password = prompt("Please enter the password to view this page:", "");
+        if (password === correctPassword) {
+            document.getElementById("main-content").style.display = "block";
+        } else {
+            document.body.innerHTML = '<div style="text-align: center; padding-top: 50px; font-family: sans-serif;"><h1>Access Denied</h1><p>Incorrect password.</p></div>';
+        }
+    })();
+</script>
+
+</body>
+</html>
 </body>
 </html>
 
