@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Financing Presentation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .slide {
+            display: none;
+            min-height: 500px; /* Ensure slides have a consistent minimum height */
+        }
+        .slide.active {
+            display: block;
+        }
+        /* Custom animation for slide transition */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .active {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .slide-card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 2.5rem;
+            margin: 1.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .list-disc li {
+            margin-bottom: 0.75rem;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen p-4">
+
+    <div id="presentation-container" class="w-full max-w-4xl">
+
+        <!-- Slide 1: Title Slide -->
+        <div id="slide-1" class="slide active">
+            <div class="slide-card text-center flex flex-col justify-center items-center">
+                <div class="w-20 h-20 bg-blue-600 text-white rounded-full flex items-center justify-center mb-6 shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                    </svg>
+                </div>
+                <h1 class="text-4xl font-bold text-gray-800 mb-2">Navigating Your Next Home Purchase</h1>
+                <p class="text-xl text-gray-500 mb-8">Financial Options & Scenarios</p>
+                <div class="text-left bg-gray-50 p-6 rounded-lg border w-full max-w-md">
+                    <p class="text-gray-700"><span class="font-semibold">Prepared for:</span> Chip & Dawn Hooper</p>
+                    <p class="text-gray-700"><span class="font-semibold">Prepared by:</span> Daniel DiStefano, Main Street Home Loans</p>
+                    <p class="text-gray-700"><span class="font-semibold">Date:</span> October 16, 2025</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Acquiring Funds Overview -->
+        <div id="slide-2" class="slide">
+            <div class="slide-card">
+                 <h2 class="text-3xl font-bold text-gray-800 mb-6">Acquiring Funds for Down Payment</h2>
+                <h3 class="text-xl text-blue-600 font-semibold mb-6">Overview of Options</h3>
+                <p class="text-gray-600 mb-6">There are three potential options to acquire the necessary funds. These strategies are designed to avoid accessing your current investment accounts, leaving them in place for maximum earning potential.</p>
+                <div class="space-y-4">
+                    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
+                        <h4 class="font-semibold text-lg text-blue-800">1. Bridge Loan</h4>
+                        <p class="text-blue-700">A short-term loan that "bridges" the gap between buying a new home and selling your current one.</p>
+                    </div>
+                    <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-lg">
+                        <h4 class="font-semibold text-lg text-green-800">2. Home Equity Line of Credit (HELOC)</h4>
+                        <p class="text-green-700">A revolving line of credit based on your current home's equity, offering substantial cost savings.</p>
+                    </div>
+                    <div class="bg-purple-50 border-l-4 border-purple-500 p-4 rounded-r-lg">
+                        <h4 class="font-semibold text-lg text-purple-800">3. Margin Loan</h4>
+                        <p class="text-purple-700">A loan secured against your own investment assets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Bridge Loan -->
+        <div id="slide-3" class="slide">
+            <div class="slide-card">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Funding Option 1: Bridge Loan</h2>
+                <p class="text-gray-500 mb-6">(Assuming a list price of ~$605,000 for current home)</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <ul class="space-y-3 text-gray-700">
+                            <li><strong>Total Loan Amount:</strong> $158,570</li>
+                            <li><strong>Equity Unlock for New Home:</strong> $125,000</li>
+                            <li><strong>Maintenance Reserve:</strong> $18,150</li>
+                            <li><strong>Program Fee:</strong> 2.4% (~$14,500)</li>
+                            <li><strong>Inspection Fee:</strong> $900</li>
+                            <li><strong>Program Period:</strong> 120 days</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg border">
+                        <h4 class="font-semibold text-lg text-gray-800 mb-2">Key Feature: No Payments</h4>
+                        <p class="text-gray-600">This unique loan requires no monthly payments. If your home is unsold after 120 days, it will be purchased to satisfy the loan. You receive the full difference (less costs) when it's sold to the final buyer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 4: HELOC -->
+        <div id="slide-4" class="slide">
+            <div class="slide-card">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Funding Option 2: Home Equity Line of Credit (HELOC)</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                     <div class="bg-green-100 p-6 rounded-lg border border-green-200">
+                        <h4 class="font-semibold text-lg text-green-800 mb-2">Primary Advantage</h4>
+                        <p class="text-green-700">A HELOC offers <span class="font-bold">"SUBSTANTIALLY less costs"</span> when compared to a bridge loan.</p>
+                        <ul class="mt-4 space-y-2 text-green-700">
+                             <li><strong>Estimated Total Fees:</strong> ~$2,500</li>
+                             <li><strong>Required Payment:</strong> Interest-only (~$900/mo on $125k)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-lg text-gray-800 mb-2">Features</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>No appraisal required</li>
+                            <li>No full title package needed</li>
+                            <li>Flexible timing and repayment</li>
+                        </ul>
+                                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Margin Loan -->
+        <div id="slide-5" class="slide">
+            <div class="slide-card text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Funding Option 3: Margin Loan</h2>
+                <div class="max-w-2xl mx-auto">
+                    <p class="text-lg text-gray-600 mb-6">This involves securing a loan against your own investment assets. Because it's secured by your portfolio, paying it back (plus interest) essentially adds back to your own net worth.</p>
+                    <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 text-left">
+                        <h4 class="font-semibold text-lg text-blue-800 mb-2">Recommendation</h4>
+                        <p class="text-blue-700">It is highly recommended to speak with your Financial Advisor (FA) to determine if this is an available and advantageous option for your specific financial situation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: New Home Purchase Scenarios -->
+        <div id="slide-6" class="slide">
+            <div class="slide-card">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">New Home Purchase: Loan Scenarios</h2>
+                <div class="bg-gray-100 p-6 rounded-lg grid grid-cols-3 gap-4 text-center">
+                    <div>
+                        <p class="text-sm text-gray-500 uppercase">Purchase Price</p>
+                        <p class="text-2xl font-bold text-gray-800">$500,000</p>
+                    </div>
+                     <div>
+                        <p class="text-sm text-gray-500 uppercase">Down Payment (20%)</p>
+                        <p class="text-2xl font-bold text-gray-800">$100,000</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500 uppercase">Loan Amount</p>
+                        <p class="text-2xl font-bold text-gray-800">$400,000</p>
+                    </div>
+                </div>
+                <p class="text-center mt-6 text-gray-600">Two primary loan options for the new home purchase will be explored:</p>
+                <div class="mt-4 flex justify-center gap-6">
+                    <div class="font-semibold text-lg text-blue-600">1. Conventional 30-Year Fixed</div>
+                    <div class="font-semibold text-lg text-green-600">2. Interest-Only Loan</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Conventional 30-Year Fixed -->
+        <div id="slide-7" class="slide">
+            <div class="slide-card">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Purchase Option 1: Conventional 30-Year Fixed</h2>
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="flex-1 bg-blue-50 p-8 rounded-lg text-center">
+                        <p class="text-lg text-blue-700">Total Monthly Payment</p>
+                        <p class="text-5xl font-bold text-blue-900 my-2">$3,545.48</p>
+                        <p class="text-sm text-blue-600">Total Estimated Cash to Close: $117,016.55</p>
+                    </div>
+                    <div class="flex-1">
+                         <h4 class="font-semibold text-lg text-gray-800 mb-2">Payment Breakdown:</h4>
+                         <ul class="space-y-2 text-gray-700">
+                            <li class="flex justify-between"><span>Principal & Interest (P&I)</span> <span>$2,495.48</span></li>
+                            <li class="flex justify-between"><span>Homeowners Insurance (est.)</span> <span>$300.00</span></li>
+                            <li class="flex justify-between border-b pb-2"><span>Property Taxes (est.)</span> <span>$750.00</span></li>
+                            <li class="flex justify-between font-bold pt-2"><span>Total</span> <span>$3,545.48</span></li>
+                         </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 8: Interest-Only Loan -->
+        <div id="slide-8" class="slide">
+            <div class="slide-card">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Purchase Option 2: Interest-Only Loan</h2>
+                <p class="text-gray-500 mb-6">Conventional 30-Year Fixed with first 10 years as interest-only payments.</p>
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="flex-1 bg-green-50 p-8 rounded-lg text-center">
+                        <p class="text-lg text-green-700">Initial Monthly Payment</p>
+                        <p class="text-5xl font-bold text-green-900 my-2">$3,425.00</p>
+                        <p class="text-sm text-green-600">Total Estimated Cash to Close: $117,139.85</p>
+                    </div>
+                    <div class="flex-1">
+                         <h4 class="font-semibold text-lg text-gray-800 mb-2">Payment Breakdown:</h4>
+                         <ul class="space-y-2 text-gray-700">
+                            <li class="flex justify-between"><span>Interest-Only (P&I)</span> <span>$2,375.00</span></li>
+                            <li class="flex justify-between"><span>Homeowners Insurance (est.)</span> <span>$300.00</span></li>
+                            <li class="flex justify-between border-b pb-2"><span>Property Taxes (est.)</span> <span>$750.00</span></li>
+                            <li class="flex justify-between font-bold pt-2"><span>Total</span> <span>$3,425.00</span></li>
+                         </ul>
+                    </div>
+                </div>
+                <p class="mt-6 text-center text-gray-600 bg-gray-50 p-4 rounded-md">This option provides lower initial payments and flexibility if you plan to pay down the balance after selling your current home.</p>
+                <p class="mt-4 text-center text-blue-700 bg-blue-50 p-4 rounded-md">This option also allows for more mortgage interest write-off compared to option 1.</p>
+            </div>
+        </div>
+
+        <!-- NEW Slide 9: Seller Net Sheet -->
+        <div id="slide-9" class="slide">
+            <div class="slide-card">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Sale of Current Home: Estimated Net Proceeds</h2>
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="flex-1">
+                        <ul class="space-y-2 text-gray-700 text-lg">
+                            <li class="flex justify-between"><span>Sales Price</span> <span class="font-semibold">$625,000</span></li>
+                            <li class="flex justify-between text-red-600"><span>Realtor Commission (5%)</span> <span>($31,250)</span></li>
+                            <li class="flex justify-between text-red-600"><span>Title Company Fees</span> <span>($4,365)</span></li>
+                            <li class="flex justify-between text-red-600 border-b pb-2"><span>Tax Proration & Misc Fees</span> <span>($6,432)</span></li>
+                        </ul>
+                    </div>
+                    <div class="flex-1 bg-green-100 p-8 rounded-lg text-center flex flex-col justify-center">
+                         <p class="text-2xl text-green-800">Estimated Net Proceeds</p>
+                        <p class="text-6xl font-bold text-green-900 my-2">$582,953</p>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-400 mt-6 text-center">Disclaimer: This is an estimate provided by Capital Title for discussion purposes. Actual costs may vary.</p>
+            </div>
+        </div>
+
+        <!-- NEW Slide 10: Proceeds Allocation -->
+        <div id="slide-10" class="slide">
+            <div class="slide-card">
+                 <h2 class="text-3xl font-bold text-gray-800 mb-6">Strategic Allocation of Sale Proceeds</h2>
+                 <p class="text-center text-gray-600 mb-6">With approximately <span class="font-bold">$583,000</span> in proceeds, you have significant flexibility. Here is a potential strategy:</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-blue-800">$150,000</h3>
+                        <p class="text-blue-700 mt-2">Lump sum payment towards <span class="font-semibold">investment property</span>.</p>
+                    </div>
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-green-800">$300,000</h3>
+                        <p class="text-green-700 mt-2">Lump sum payment towards <span class="font-semibold">new primary home</span>.</p>
+                    </div>
+                    <div class="bg-yellow-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-yellow-800">~$133,000</h3>
+                        <p class="text-yellow-700 mt-2">Funds <span class="font-semibold">retained</span> for other investments, improvements, or liquidity.</p>
+                    </div>
+                </div>
+                 <div class="mt-8 bg-gray-50 p-6 rounded-lg border">
+                    <h4 class="font-semibold text-lg text-gray-800 mb-2">Benefits of this Strategy:</h4>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Allows for potential payoff of the investment property within 3 years.</li>
+                        <li>Minimizes the monthly payment on your new primary residence.</li>
+                        <li>Retains some mortgage interest tax benefits for deductions.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Slide 11: Interest-Only Paydown Example -->
+        <div id="slide-11" class="slide">
+            <div class="slide-card">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">New Home Paydown Scenario</h2>
+                <p class="text-center text-gray-600 mb-6">This example illustrates the effect of a $300,000 lump-sum payment on the new home loan.</p>
+                <div class="relative border-l-2 border-blue-300 ml-4 pl-8 py-4">
+                    <!-- Step 1 -->
+                    <div class="mb-8 relative">
+                        <div class="absolute -left-11 -top-1 w-6 h-6 bg-white border-2 border-blue-500 rounded-full flex items-center justify-center">
+                           <span class="text-xs font-bold text-blue-500">1</span>
+                        </div>
+                        <h4 class="font-semibold text-lg text-gray-800">Months 1-6</h4>
+                        <p class="text-gray-600">Loan Balance: $400,000</p>
+                        <p class="text-gray-600">Interest-Only Payment: <span class="font-semibold text-gray-800">$2,375/month</span></p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="mb-8 relative">
+                         <div class="absolute -left-11 -top-1 w-6 h-6 bg-white border-2 border-blue-500 rounded-full flex items-center justify-center">
+                           <span class="text-xs font-bold text-blue-500">2</span>
+                        </div>
+                        <h4 class="font-semibold text-lg text-gray-800">At Month 6 (Post-Sale)</h4>
+                        <p class="text-gray-600">Make lump-sum payment of <span class="font-semibold text-green-600">$300,000</span></p>
+                        <p class="text-gray-600">New Loan Balance: <span class="font-semibold text-gray-800">$100,000</span></p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="relative">
+                         <div class="absolute -left-11 -top-1 w-6 h-6 bg-white border-2 border-blue-500 rounded-full flex items-center justify-center">
+                           <span class="text-xs font-bold text-blue-500">3</span>
+                        </div>
+                        <h4 class="font-semibold text-lg text-gray-800">Months 7-18</h4>
+                        <p class="text-gray-600">Loan Balance: $100,000</p>
+                        <p class="text-gray-600">New Interest-Only Payment: <span class="font-semibold text-gray-800">$593.75/month</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 12: Next Steps -->
+        <div id="slide-12" class="slide">
+             <div class="slide-card text-center">
+                <h1 class="text-3xl font-bold text-gray-800 mb-4">Next Steps</h1>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">Please review these options and let me know of any questions. I am happy to discuss these scenarios with you both, and with your FA, to decide on the best path forward.</p>
+                <div class="inline-block bg-white p-6 rounded-lg border shadow-sm">
+                    <p class="font-bold text-xl text-gray-800">Daniel DiStefano</p>
+                    <p class="text-gray-500">Sales Manager, NMLS# 2280243</p>
+                    <p class="text-blue-600 mt-2">ddistefano@mainstreethl.com</p>
+                    <p class="text-gray-700">Cell: 302-229-2100</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <div class="mt-8 w-full max-w-4xl flex justify-between items-center px-8">
+        <button id="prevBtn" class="bg-white text-gray-700 font-semibold py-2 px-4 border border-gray-300 rounded-lg shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed">
+            Previous
+        </button>
+        <div id="slide-counter" class="text-gray-600 text-sm font-medium">
+            Slide 1 of 12
+        </div>
+        <button id="nextBtn" class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed">
+            Next
+        </button>
+    </div>
+
+    <script>
+        // --- Presentation Navigation ---
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const slideCounter = document.getElementById('slide-counter');
+        let currentSlide = 0;
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+            currentSlide = index;
+            updateNav();
+        }
+
+        function updateNav() {
+            prevBtn.disabled = currentSlide === 0;
+            nextBtn.disabled = currentSlide === totalSlides - 1;
+            slideCounter.textContent = `Slide ${currentSlide + 1} of ${totalSlides}`;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentSlide > 0) {
+                showSlide(currentSlide - 1);
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentSlide < totalSlides - 1) {
+                showSlide(currentSlide + 1);
+            }
+        });
+
+        showSlide(0);
+    </script>
+</body>
+</html>
+
